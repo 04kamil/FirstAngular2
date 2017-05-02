@@ -6,11 +6,15 @@
 
 <!--<form >-->
 <label>
-  Nowe Zadanie: <input type="text" [(ngModel)]="task" (keyup.enter)="addToDo()"/>
+  Nowe Zadanie: <input type="text" [(ngModel)]="task" (keyup.enter)="addToDo()"/> <input type="submit" (click)="addToDo()" value="Dodaj zadanie"/>
 </label>
 
 <ul>
-<li><input type="checkbox"/> Zadanko</li>
+  <li *ngFor="let todo of todos, let ind = index">
+    <input type="checkbox"  [(ngModel)]="todo.isMy"/>
+    <span [ngClass]="{'checked':todo.isMy}">{{todo.title}}</span>
+    <span class="delete-icon" (click)="deleteToDo(ind)">[X]</span>
+  </li>
 </ul>
 <!--<input type="submit" value="Send msg" ng-click="addToDo()"/>-->
 <!--</form>-->
