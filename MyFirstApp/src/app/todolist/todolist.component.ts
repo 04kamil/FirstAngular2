@@ -29,7 +29,7 @@ todos:Array<ToDo>=[
     }
     const newTask:ToDo={
       title:this.task,
-      isMy:true
+      isMy:false
     };
     this.todos.push(newTask);
     this.task= '';
