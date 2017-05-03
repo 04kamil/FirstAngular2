@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { TodolistComponent } from './todolist/todolist.component';
+import { WWWComponent } from './www/www.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodolistComponent
+    TodolistComponent,
+    WWWComponent
   ],
   imports: [
     BrowserModule,
