@@ -7,10 +7,11 @@
 
 
 body{
-  /*background-image: url("mars.jpg");
+  background-image: url("rome.jpg");
   background-repeat: no-repeat;
-  background-size: auto;*/
-  background-color:whitesmoke;
+  background-size: 100% auto;
+  
+  /*background-color:whitesmoke;*/
 }
 
 
@@ -21,7 +22,7 @@ body{
 
 .navBar {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     overflow: hidden;
     background-color: #998C62;
@@ -30,8 +31,8 @@ body{
 }
 
 .navBar li {
-    float: left;
-    /*display: inline-block;*/
+    /*float: left;*/
+    display: inline-block;
 }
 
 .navBar li a {
@@ -43,9 +44,21 @@ body{
     
     font-family: 'Quattrocento', serif;
 
-    font-size: 16px;
+    font-size: 20px;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #AA9D73;
+    text-shadow: 2px 2px black;
+}
+
+.firstDiv{
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Quattrocento', serif;
+    background-color: white;
+    opacity: 0.7;
+    padding: 50px 90px 50px 140px;
+     text-align:center;
+
 }
