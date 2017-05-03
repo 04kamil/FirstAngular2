@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { WWWComponent } from './www/www.component';
+import { CodeComponent } from './code/code.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodolistComponent,
-    WWWComponent
+    WWWComponent,
+    CodeComponent
   ],
   imports: [
     BrowserModule,
